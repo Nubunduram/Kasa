@@ -1,4 +1,5 @@
-
+@import "../../style/mixins";
+@import "../../style/variables";
 
 // Banner.jsx
 #banner {
@@ -10,10 +11,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: auto;
     margin-top: 27px;
-
-    @media screen and (min-width: 768px) {
-        margin-top: 50px
-    }
+    height: 111px;
 
     & img {
         position: absolute;
@@ -24,31 +22,38 @@
     }
 
     & .img-filter {
-        color: #fff;
-        min-height: 111px;
-        width: 100%;
+        height: 100%;
         background-color: #000;
         opacity: 0.6;
+    }
+
+    & .title-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
 
-        @media screen and (min-width: 768px) {
-            justify-content: center;
-            height: 223px;
-        }
-
-
         & h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: min(16px);
             width: 225px;
+            color: $default-white;
+            margin: 0 16px;
+        }
+    }
 
-            @media screen and (min-width: 768px) {
-                font-size: 3rem;
-                width: auto;
+    @media screen and (min-width: 768px) {
+        margin-top: 50px;
+        height: 223px;
+
+        & .title-container {
+            & h1 {
+                font-size: 48px;
+                width: 100%;
+                text-align: center;
             }
         }
-
     }
 }

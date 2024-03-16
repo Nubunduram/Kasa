@@ -1,0 +1,5 @@
+@mixin grid-center {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}

@@ -26,18 +26,18 @@ const Layout = ({ children }) => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout children={<Home />}/>,
-    errorElement: <Layout children={<ErrorPage />}/>,
+    element: <Layout children={<Home />} />,
+    errorElement: <Layout children={<ErrorPage />} />,
   },
   {
     path: "/fiche-logement/:logementId",
-    element: <Layout children={<Hosting />}/>,
-    errorElement: <Layout children={<ErrorPage />}/>,
+    element: <Layout children={<Hosting />} />,
+    errorElement: <Layout children={<ErrorPage />} />,
   },
   {
     path: "/a-propos",
-    element: <Layout children={<About />}/>,
-    errorElement: <Layout children={<ErrorPage />}/>,
+    element: <Layout children={<About />} />,
+    errorElement: <Layout children={<ErrorPage />} />,
   }
 ]);
 

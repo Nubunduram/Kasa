@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 
-const header = () => {
+const Header = () => {
     return (
         <header id='general-header'>
                 <svg width="211" height="68" viewBox="0 0 211 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,4 +20,4 @@ const header = () => {
     )
 }
 
-export default header
+export default Header

@@ -1,0 +1,38 @@
+// Header.jsx
+#general-header {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 335px;
+    max-width: min(90%, 1240px);
+
+    @media screen and (min-width: 768px) {
+        margin-top: 45px;
+    }
+
+    & svg {
+        min-width: 145px;
+    }
+
+    & nav {
+        min-width: 190px;
+
+        &>* {
+            font-weight: 500;
+            padding-left: 26px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+
+            @media screen and (min-width: 768px) {
+                text-transform: capitalize;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

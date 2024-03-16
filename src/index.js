@@ -8,22 +8,36 @@ import Home from "./routes/home";
 import ErrorPage from "./routes/error-page";
 import Hosting from "./routes/hosting";
 import About from "./routes/about";
+// Header & Footer
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
+const Layout = ({ children }) => {
+  return (
+    <React.StrictMode>
+      <Header />
+      {children}
+      <Footer />
+    </React.StrictMode>
+  );
+};
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-    errorElement: <ErrorPage />,
+    element: <Layout children={<Home />}/>,
+    errorElement: <Layout children={<ErrorPage />}/>,
   },
   {
     path: "/fiche-logement/:logementId",
-    element: <Hosting />,
-    errorElement: <ErrorPage />,
+    element: <Layout children={<Hosting />}/>,
+    errorElement: <Layout children={<ErrorPage />}/>,
   },
   {
     path: "/a-propos",
-    element: <About />,
-    errorElement: <ErrorPage />,
+    element: <Layout children={<About />}/>,
+    errorElement: <Layout children={<ErrorPage />}/>,
   }
 ]);
 

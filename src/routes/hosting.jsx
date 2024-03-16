@@ -6,13 +6,11 @@ export default function Hosting() {
   
   return (
     <>
-      {/* Navbar */}
       {/* image container -> prop hostingID */}
       {/* detail Container -> Title/Place/Rating/owner/ownerPic/tags... */}
       <div>
         <h2>Fiche Logement {logementId}</h2>
       </div>
-      {/* Footer */}
     </>
   );
 }

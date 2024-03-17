@@ -1,0 +1,12 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+
+#DropdownAbout {
+    display: grid;
+    place-items: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1024px;
+    gap: 20px;
+}

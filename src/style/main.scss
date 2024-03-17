@@ -2,6 +2,8 @@
 @import "../components/Banner/Banner";
 @import "../components/Header/Header";
 @import "../components/Footer/Footer";
+@import "../components/Dropdown/Dropdown";
+@import "../components/DropdownAbout/DropdownAbout";
 // Style
 @import "../style/mixins";
 @import "../style/variables";
@@ -15,6 +17,12 @@
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+    border: none;
 }
 
 #error-page {

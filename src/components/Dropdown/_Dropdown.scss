@@ -1,0 +1,76 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+.dropdown {
+    width: 100%;
+    position: relative;
+
+    & button {
+        width: 100%;
+        border-radius: 5px;
+        min-height: 30px;
+        color: $default-white;
+        background-color: $default-pink;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+
+        & svg {
+            transform: rotate(180deg);
+            transition: 0.4s;
+        }
+    }
+
+    & .dropdown-content {
+        height: 0px;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+
+        & p {
+            padding: 20px;
+            background-color: $default-gray;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            height: 0px;
+            padding-top: 10px;
+            line-height: 0px;
+            transition: 0.4s;
+
+        }
+    }
+}
+
+.active {
+    & button {
+        & svg {
+            transform: rotate(0deg);
+        }
+
+    }
+    .dropdown-content {
+        height: auto;
+        position: initial;
+        top: auto;
+        & p {
+            height: auto;
+            padding: 20px;
+            line-height: initial;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dropdown {
+        & button {
+            font-size: 24px;
+            padding: 15px;
+        }
+    }
+}

@@ -26,8 +26,19 @@ button {
     border: none;
 }
 
-ul, ol {
+ul,
+ol {
     list-style: none;
+}
+
+.img-filter-light {
+    @include black-filter;
+    opacity: 0.3;
+}
+
+.img-filter {
+    @include black-filter;
+    opacity: 0.6;
 }
 
 #error-page {
@@ -46,6 +57,7 @@ ul, ol {
         font-weight: 500;
         color: $default-pink;
         width: 260px;
+
         & span {
             width: 100%;
         }

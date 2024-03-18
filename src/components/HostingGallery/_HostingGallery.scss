@@ -1,0 +1,13 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+#hosting-gallery {
+    @include size-section;
+    margin: 22px auto;
+}
+
+@media screen and (min-width: 768px) {
+    #hosting-gallery {
+        margin: 43px auto;
+    }
+}

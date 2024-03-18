@@ -5,8 +5,7 @@
 #DropdownAbout {
     @include grid-item-center;
     margin: 20px auto;
-    width: 90%;
-    max-width: 1024px;
+    max-width: min(90%, 1024px);
     gap: 20px;
 }
 

@@ -4,6 +4,7 @@
 @import "../components/Footer/Footer";
 @import "../components/Dropdown/Dropdown";
 @import "../components/DropdownAbout/DropdownAbout";
+@import "../components/HostingGallery/HostingGallery";
 // Style
 @import "../style/mixins";
 @import "../style/variables";
@@ -23,6 +24,10 @@ a {
 button {
     cursor: pointer;
     border: none;
+}
+
+ul, ol {
+    list-style: none;
 }
 
 #error-page {

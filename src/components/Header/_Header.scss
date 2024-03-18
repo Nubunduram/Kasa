@@ -1,34 +1,25 @@
 // Header.jsx
 #general-header {
-    margin: auto;
+    @include size-section;
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 335px;
-    max-width: min(90%, 1240px);
-
-    @media screen and (min-width: 768px) {
-        margin-top: 45px;
-    }
 
     & svg {
         min-width: 145px;
+        max-width: 42%;
     }
 
     & nav {
-        min-width: 190px;
+        max-width: 58%;
 
         &>* {
+            white-space: nowrap;
             font-weight: 500;
             padding-left: 26px;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
-
-            @media screen and (min-width: 768px) {
-                text-transform: capitalize;
-                font-size: 1.6rem;
-            }
 
             &:hover {
                 text-decoration: underline;
@@ -36,4 +27,25 @@
         }
     }
 
+}
+
+@media screen and (min-width: 768px) {
+    #general-header {
+        margin-top: 45px;
+
+        & nav {
+            &>* {
+                text-transform: capitalize;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #general-header {
+        & nav {
+            display: grid;
+        }
+    }
 }

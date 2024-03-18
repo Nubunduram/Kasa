@@ -2,13 +2,13 @@
 
 // Footer.jsx
 footer {
+    @include grid-all-center;
     width: 100%;
     max-width: 1440px;
     margin: auto;
     color: $default-white;
     background-color: $default-black;
     height: 209px;
-    @include grid-all-center;
 
     & h2 {
         width: 123px;

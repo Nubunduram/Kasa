@@ -2,7 +2,7 @@
 @import "../../style/variables";
 
 // Banner.jsx
-#banner {
+.banner {
     position: relative;
     min-width: 335px;
     max-width: min(90%, 1240px);
@@ -25,6 +25,12 @@
         height: 100%;
         background-color: #000;
         opacity: 0.6;
+    }
+
+    & .img-filter-light {
+        height: 100%;
+        background-color: #000;
+        opacity: 0.3;
     }
 
     & .title-container {

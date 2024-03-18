@@ -23,7 +23,7 @@
 
         & svg {
             transform: rotate(180deg);
-            transition: 0.4s;
+            transition: 0.5s;
         }
     }
 
@@ -32,17 +32,15 @@
         position: absolute;
         top: 0;
         z-index: -1;
+        overflow: hidden;
 
         & p {
-            padding: 20px;
+            padding: 10px;
             background-color: $default-gray;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
-            height: 0px;
-            padding-top: 10px;
-            line-height: 0px;
-            transition: 0.4s;
-
+            transform: translateY(-100%);
+            transition: 0.5s; 
         }
     }
 }
@@ -59,8 +57,9 @@
         position: initial;
         top: auto;
         & p {
-            height: auto;
+            transform: scaleY(1);
             padding: 20px;
+            height: auto;
             line-height: initial;
         }
     }

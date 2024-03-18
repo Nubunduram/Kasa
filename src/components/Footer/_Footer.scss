@@ -5,10 +5,10 @@ footer {
     width: 100%;
     max-width: 1440px;
     margin: auto;
-    color: #fff;
-    background-color: #000;
+    color: $default-white;
+    background-color: $default-black;
     height: 209px;
-    @include grid-center;
+    @include grid-all-center;
 
     & h2 {
         width: 123px;

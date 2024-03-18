@@ -26,8 +26,7 @@ button {
 }
 
 #error-page {
-    display: grid;
-    place-items: center;
+    @include grid-item-center;
     gap: 113px;
     margin: 113px 0;
 

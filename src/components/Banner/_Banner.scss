@@ -7,37 +7,31 @@
     min-width: 335px;
     max-width: min(90%, 1240px);
     overflow: hidden;
-    border-radius: 25px;
+    border-radius: $m-radius;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin: auto;
     margin-top: 27px;
     height: 111px;
 
     & img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include absolute-centered;
         width: 100%;
     }
 
     & .img-filter {
         height: 100%;
-        background-color: #000;
+        background-color: $default-black;
         opacity: 0.6;
     }
 
     & .img-filter-light {
         height: 100%;
-        background-color: #000;
+        background-color: $default-black;
         opacity: 0.3;
     }
 
     & .title-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include absolute-centered;
         width: 100%;
         height: 100%;
         display: flex;

@@ -1,4 +1,3 @@
-// Default
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -8,19 +7,9 @@ import Home from "./routes/home";
 import ErrorPage from "./routes/error-page";
 import Hosting from "./routes/hosting";
 import About from "./routes/about";
-// Header & Footer
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Layout from "./routes/layout";
 
-const Layout = ({ children }) => {
-  return (
-    <React.StrictMode>
-      <Header />
-      {children}
-      <Footer />
-    </React.StrictMode>
-  );
-};
+
 
 
 const router = createBrowserRouter([

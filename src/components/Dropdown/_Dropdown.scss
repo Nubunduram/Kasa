@@ -7,7 +7,7 @@
 
     & button {
         width: 100%;
-        border-radius: 5px;
+        border-radius: $xs-radius;
         min-height: 30px;
         color: $default-white;
         background-color: $default-pink;
@@ -37,8 +37,8 @@
         & p {
             padding: 10px;
             background-color: $default-gray;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: $xs-radius;
+            border-bottom-right-radius: $xs-radius;
             transform: translateY(-100%);
             transition: 0.5s; 
         }

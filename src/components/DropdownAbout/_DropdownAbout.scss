@@ -3,8 +3,7 @@
 
 
 #DropdownAbout {
-    display: grid;
-    place-items: center;
+    @include grid-item-center;
     margin: 20px auto;
     width: 90%;
     max-width: 1024px;

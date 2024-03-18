@@ -1,5 +1,17 @@
-@mixin grid-center {
+@mixin grid-all-center {
     display: grid;
     place-content: center;
     place-items: center;
+}
+
+@mixin grid-item-center {
+    display: grid;
+    place-items: center;
+}
+
+@mixin absolute-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -9,9 +9,12 @@
     justify-content: space-between;
     align-items: center;
 
-    & svg {
+    & a {
         min-width: 145px;
         max-width: 42%;
+        & svg {
+            width: 100%;
+        }
     }
 
     & nav {
@@ -45,7 +48,7 @@
         margin-top: 45px;
 
         & nav {
-            &>* {
+            & a {
                 text-transform: capitalize;
                 font-size: 1.5rem;
             }

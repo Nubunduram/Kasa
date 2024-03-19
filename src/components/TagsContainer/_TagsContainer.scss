@@ -1,0 +1,29 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
+#tags-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(max-content, 84px));
+    gap: 10px;
+
+    & .tag {
+        @include grid-item-center;
+        background-color: $default-pink;
+        color: $default-white;
+        font-size: 10px;
+        font-weight: 700;
+        border-radius: $xs-radius;
+        height: 18px;
+        padding: 0 8px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #tags-container {
+        & .tag {
+            height: 25px;
+            font-size: 14px;
+            border-radius: $sm-radius;
+        }
+    }
+}

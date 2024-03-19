@@ -5,6 +5,11 @@
 @import "../components/Dropdown/Dropdown";
 @import "../components/DropdownAbout/DropdownAbout";
 @import "../components/HostingGallery/HostingGallery";
+@import "../components/Carousel/Carousel";
+@import "../components/DropdownHosting/DropdownHosting";
+@import "../components/HostingTitle/HostingTitle";
+@import "../components/RatingAndHosting/RatingAndHosting";
+@import "../components/TagsContainer/TagsContainer";
 // Style
 @import "../style/mixins";
 @import "../style/variables";
@@ -27,7 +32,8 @@ button {
 }
 
 ul,
-ol {
+ol,
+li {
     list-style: none;
 }
 
@@ -88,4 +94,8 @@ ol {
             font-size: 18px;
         }
     }
+}
+
+#hosting-main {
+    @include size-section;
 }

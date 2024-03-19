@@ -1,3 +1,6 @@
+@import "../../style/mixins";
+@import "../../style/variables";
+
 // Header.jsx
 #general-header {
     @include size-section;

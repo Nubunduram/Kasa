@@ -4,9 +4,8 @@ import hostingList from "../assets/hosting-list.json";
 import ErrorPage from "./error-page";
 import Carousel from "../components/Carousel/Carousel";
 import DropdownHosting from "../components/DropdownHosting/DropdownHosting";
-import HostingTitle from "../components/HostingTitle/HostingTitle";
-import TagsContainer from "../components/TagsContainer/TagsContainer";
-import RatingAndHosting from "../components/RatingAndHosting/RatingAndHosting";
+import Detail from "../components/Detail/Detail";
+
 
 export default function Hosting() {
   const { logementId } = useParams();
@@ -21,9 +20,7 @@ export default function Hosting() {
   return (
     <main id="hosting-main">
         <Carousel pictures={selectedLogement.pictures}/>
-        <HostingTitle title={selectedLogement.title} location={selectedLogement.location}/>
-        <TagsContainer tags={selectedLogement.tags}/>
-        <RatingAndHosting host={selectedLogement.host} rating={selectedLogement.rating}/>
+        <Detail title={selectedLogement.title} location={selectedLogement.location} tags={selectedLogement.tags} host={selectedLogement.host} rating={selectedLogement.rating}/>
         <DropdownHosting description={selectedLogement.description} equipments={selectedLogement.equipments} />
     </main>
   );

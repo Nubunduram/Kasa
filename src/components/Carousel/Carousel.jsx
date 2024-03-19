@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Carousel = () => {
+const Carousel = ({pictures}) => {
+  const test = pictures[0];
   return (
-    <div>
-      
+    <div id='test'>
+      <img src={test} />
     </div>
   )
 }

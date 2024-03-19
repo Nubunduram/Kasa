@@ -9,9 +9,10 @@
     justify-content: space-between;
     align-items: center;
 
-    & a {
+    & #logo-header {
         min-width: 145px;
         max-width: 42%;
+
         & svg {
             width: 100%;
         }
@@ -55,4 +56,3 @@
         }
     }
 }
-

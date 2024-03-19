@@ -37,11 +37,6 @@
                     transition: 0.25s;
                 }
 
-                & div:hover {
-                    background: $default-pink;
-                    opacity: 0.7;
-                }
-
                 & h2 {
                     position: absolute;
                     left: 0;
@@ -57,6 +52,13 @@
 
         & li:hover {
             transform: scale(1.05);
+
+            & a {
+                & div {
+                    background: $default-pink;
+                    opacity: 0.7;
+                }
+            }
         }
     }
 }

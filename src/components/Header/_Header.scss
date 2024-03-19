@@ -32,6 +32,14 @@
 
 }
 
+@media screen and (max-width: 375px) {
+    #general-header {
+        & nav {
+            display: grid;
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     #general-header {
         margin-top: 45px;
@@ -45,10 +53,3 @@
     }
 }
 
-@media screen and (max-width: 375px) {
-    #general-header {
-        & nav {
-            display: grid;
-        }
-    }
-}

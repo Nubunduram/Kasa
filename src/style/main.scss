@@ -73,8 +73,10 @@ li {
         text-decoration: underline;
         font-size: 14px;
     }
-
-    @media screen and (min-width: 768px) {
+}
+// #error-page media queries
+@media screen and (min-width: 768px) {
+    #error-page {
         gap: 139px;
         margin: 139px 0;
 

@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Kasa Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Kasa Project is a front-end web application developed using SCSS and React. It was created as the fifth professionalizing school project within a training course leading to a diploma. The project was conducted in a business context with full autonomy, and its completion was validated by a jury.
 
-### `npm start`
+![screenshot](./src/assets/screenshot-for-readme/desktop-main-page.png "Main Page")
+![screenshot](./src/assets/screenshot-for-readme/desktop-hosting-page.png "Hosting Page")
+![screenshot](./src/assets/screenshot-for-readme/mobile-about-page.png "About Page")
+![screenshot](./src/assets/screenshot-for-readme/mobile-error-page.png "Error Page")
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Objective
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The main goal of the project is to build a user-friendly platform for apartment renting, showcasing various accommodations with detailed information and pictures.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Gallery displaying all accommodations.
+- Carousel for viewing multiple pictures of each accommodation.
+- Detailed view of accommodation including host information and ratings.
+- Dropdown buttons for accessing additional information such as equipment details and descriptions.
+- Responsive design implemented based on the provided Figma mockup.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run the project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install`.
+4. Run `npm start`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Data Source
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Accommodation data is sourced from a JSON file located in the `src/assets/` directory. Each accommodation is represented as a JSON object containing various details, including pictures, host information, and ratings.

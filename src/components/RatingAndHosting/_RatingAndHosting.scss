@@ -1,9 +1,6 @@
-@import "../../style/mixins";
-@import "../../style/variables";
-
 #rating-and-hosting {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
     margin-top: 16px;
@@ -50,7 +47,7 @@
     #rating-and-hosting {
         @include flex-space-between;
         flex-direction: column-reverse;
-        align-items: end;
+        align-items: flex-end;
         width: auto;
         margin-top: 0;
 

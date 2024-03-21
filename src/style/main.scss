@@ -1,3 +1,6 @@
+// Style
+@import "./variables.scss";
+@import "./mixins.scss";
 // Components
 @import "../components/Banner/Banner";
 @import "../components/Header/Header";
@@ -11,9 +14,7 @@
 @import "../components/RatingAndHosting/RatingAndHosting";
 @import "../components/TagsContainer/TagsContainer";
 @import "../components/Detail/Detail";
-// Style
-@import "../style/mixins";
-@import "../style/variables";
+
 
 * {
     font-family: "Montserrat", sans-serif;

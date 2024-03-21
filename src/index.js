@@ -9,9 +9,6 @@ import Hosting from "./routes/hosting";
 import About from "./routes/about";
 import Layout from "./routes/layout";
 
-
-
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,12 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/fiche-logement/:logementId",
     element: <Layout children={<Hosting />} />,
-    errorElement: <Layout children={<ErrorPage />} />,
   },
   {
     path: "/a-propos",
     element: <Layout children={<About />} />,
-    errorElement: <Layout children={<ErrorPage />} />,
   }
 ]);
 

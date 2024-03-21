@@ -8,10 +8,10 @@ const DropdownHosting = ({description, equipments}) => {
   ));
 
   return (
-    <div id='dropdown-hosting'>
+    <section id='dropdown-hosting'>
       <Dropdown title={"Description"} content={description}/>
       <Dropdown title={"Équipements"} content={equipmentsList}/>
-    </div>
+    </section>
   )
 }
 

@@ -16,10 +16,10 @@ const RatingAndHosting = ({ host, rating }) => {
         </svg>
       </div>
       <div id='host-detail'>
-        <div id="host">
+        <h4 id="host">
           <span id="name">{firstName}</span>
           <span id="last-name">{lastName}</span>
-        </div>
+        </h4>
         <div id="host-picture">
           {host.picture && <img src={host.picture} alt="Host" />}
         </div>

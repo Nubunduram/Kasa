@@ -21,7 +21,7 @@
     margin: auto;
 }
 
-@mixin black-filter {
+@mixin black-filter($opacity: 1) {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -29,6 +29,7 @@
     height: 100%;
     width: 100%;
     background-color: $default-black;
+    opacity: $opacity;
 }
 
 @mixin width-height-100{

@@ -4,7 +4,7 @@ const Carousel = ({ pictures }) => {
   const [currentPictureIndex, setCurrentPictureIndex] = useState(0);
 
   const goToPreviousPicture = () => {
-    setCurrentPictureIndex((prevIndex) => (prevIndex === 0 ? pictures.length - 1 : prevIndex - 1));
+    setCurrentPictureIndex((prevIndex) => (!prevIndex ? pictures.length - 1 : prevIndex - 1));
   };
 
   const goToNextPicture = () => {

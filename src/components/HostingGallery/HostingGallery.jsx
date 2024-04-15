@@ -8,7 +8,7 @@ const HostingGallery = () => {
             <ul>
                 {hostingList.map((item) => (
                     <li key={item.id}>
-                        <Link to={`/fiche-logement/${item.id}`}>
+                        <Link to={`/Kasa/fiche-logement/${item.id}`}>
                             <img src={item.cover} alt={item.title} />
                             <div className='img-filter-light'></div>
                             <h2>{item.title}</h2>

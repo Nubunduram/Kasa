@@ -11,16 +11,16 @@ import Layout from "./routes/layout";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Kasa/",
     element: <Layout children={<Home />} />,
     errorElement: <Layout children={<ErrorPage />} />,
   },
   {
-    path: "/fiche-logement/:logementId",
+    path: "/Kasa/fiche-logement/:logementId",
     element: <Layout children={<Hosting />} />,
   },
   {
-    path: "/a-propos",
+    path: "/Kasa/a-propos",
     element: <Layout children={<About />} />,
   }
 ]);
